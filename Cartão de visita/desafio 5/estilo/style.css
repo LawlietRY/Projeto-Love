@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
@@ -12,7 +12,7 @@
 
 :root {
     --fonte1 : 'Graduate', serif;
-    --fonte2 : 'Arvo', serif;
+    --fonte2 : 'Salsa', cursive;
 }
 
 html, body {
@@ -33,7 +33,7 @@ div.texto {
 }
 
 p,h1 {
-    color: #cea638;
+    color: #a58429;
 }
 
 header > h1 {
@@ -42,17 +42,33 @@ header > h1 {
     padding-top: 0.5em;
     font-family: var(--fonte1);
     padding: 20px 70px 30px 10px;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.712);
 }
 
 section > h1 {
     font-size: 3em;
-    padding-top: 150px;
+    font-family: var(--fonte1);
+    padding: 150px 70px 30px 10px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.712);
 }
 
 p {
     text-align: justify;
     font-family: var(--fonte2);
-    padding: 15px 100px 20px 10px;
+    padding: 15px 110px 20px 10px;
+    font-size: 1.6em;
+}
+
+ul {
+    padding-top: 30px;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 div.imagem {
