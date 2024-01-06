@@ -21,19 +21,10 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div.texto {
-    height: 98vh;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to left, #daa520 1%, black 6%);
-    width: 65%;
-    padding-left: 55px;
-    padding-bottom: 20px;
-    color: white;
-    box-shadow: 9px 0px 14px 1px #daa520;
-}
 
 p,h1 {
     color: #a58429;
+    transform: skew(-3deg);
 }
 
 header > h1 {
@@ -65,10 +56,35 @@ ul {
 
 li {
     padding: 20px;
+    font-size: 1.5em;
 }
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a58429;
+    padding: 2px;
+}
+
+#icones {
+    max-width: 2em;
+
+}
+
+div.texto {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, #daa520 1%, black 6%);
+    width: 65%;
+    padding-left: 55px;
+    padding-bottom: 20px;
+    color: white;
+    box-shadow: 9px 0px 14px 1px #daa520;
+    transform: skew(3deg);
 }
 
 div.imagem {
@@ -78,4 +94,5 @@ div.imagem {
     background-repeat: no-repeat;
     background-size: 35% 100%;
     padding-bottom: 20px;
+    background-attachment: fixed;
 }
