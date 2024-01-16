@@ -1,6 +1,71 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'CupiddeLocke';
+    src: url(../fontes-love/CupiddeLocke.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Valentine';
+    src: url(../fontes-love/I\ Found\ My\ Valentine\ -\ TTF.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --fonte1: 'CupiddeLocke', cursive;
+    --fonte2: 'Valentine', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    background-color: darkgrey;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, h1 {
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 2.3em;
+    font-family: var(--fonte2);
+}
+
+header > p {
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
 
 section {
     width: 400px;
+}
+
+section > p {
+    font-family: var(--fonte1);
 }
