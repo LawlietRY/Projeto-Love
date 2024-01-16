@@ -1,22 +1,30 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'CupiddeLocke';
-    src: url(fontes-love/CupiddeLocke.ttf);
+    font-family: 'Angel';
+    src: url(fontes-gotico/Angel\ wish.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Valentine';
-    src: url(fontes-love/I\ Found\ My\ Valentine\ -\ TTF.ttf);
+    font-family: 'Cardinal';
+    src: url(fontes-gotico/Cardinal.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wrath';
+    src: url(fontes-gotico/WrathStyles.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
-    --fonte1: 'CupiddeLocke', cursive;
-    --fonte2: 'Valentine', cursive;
+    --fonte1: 'Angel', cursive;
+    --fonte2: 'Cardinal', cursive;
+    --fonte3: 'Wrath', cursive;
 }
 
 * {
@@ -33,15 +41,15 @@ html, body {
 
 header>h1 {
     padding-top: 50px;
-    font-size: 9vw;
-    font-family: var(--fonte2);
+    font-size: 16vw;
+    font-family: var(--fonte1);
     font-variant: small-caps;
 }
 
 
 header>p {
     padding: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte3);
 }
 
 header {
@@ -66,16 +74,21 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-size: 3.5vw;
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
 }
 
 section>p {
     padding-bottom: 2em;
 }
 
-section.texto {
-    background-color: white;
-    color: black;
+section#tx1 {
+    background-image: linear-gradient(to bottom, #ff0000d2 -123%, rgba(0, 0, 0, 0.842) 77%);;
+    color: rgb(255, 255, 255);
+}
+
+section#tx2 {
+    background-image: linear-gradient(to bottom, #ff00ead2 -123%, rgba(0, 0, 0, 0.842) 77%);;
+    color: rgb(255, 255, 255);
 }
 
 section.imagem {
@@ -93,12 +106,12 @@ section>p>a {
 }
 
 section#img01 {
-    background-image: url(../imagens/foto\ 1\ love.jpg);
+    background-image: url(../imagens/foto\ 3.jpg);
     background-position: top center;
 }
 
 section#img02 {
-    background-image: url(../imagens/foto\ 2\ love.jpg);
+    background-image: url(../imagens/foto\ 4.jpg);
 }
 
 section.imagem>p {
