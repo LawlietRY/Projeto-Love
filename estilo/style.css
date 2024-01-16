@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'CupiddeLocke';
-    src: url(../fontes-love/CupiddeLocke.ttf);
+    src: url(fontes-love/CupiddeLocke.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Valentine';
-    src: url(../fontes-love/I\ Found\ My\ Valentine\ -\ TTF.ttf);
+    src: url(fontes-love/I\ Found\ My\ Valentine\ -\ TTF.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -32,16 +32,15 @@ html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header, h1 {
-    padding-top: 20px;
-}
-
-h1 {
-    font-size: 2.3em;
+header>h1 {
+    padding-top: 50px;
+    font-size: 9vw;
     font-family: var(--fonte2);
+    font-variant: small-caps;
 }
 
-header > p {
+
+header>p {
     padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -54,18 +53,59 @@ header {
 
 a:hover {
     text-decoration: underline;
-    color: blue;
 }
 
 a {
     text-decoration: none;
     color: white;
+    font-weight: bolder
 }
 
 section {
-    width: 400px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+    font-family: var(--fonte1);
 }
 
-section > p {
-    font-family: var(--fonte1);
+section>p {
+    padding-bottom: 2em;
+}
+
+section.texto {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(51, 51,51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#img01 {
+    background-image: url(../imagens/foto\ 1\ love.jpg);
+    background-position: top center;
+}
+
+section#img02 {
+    background-image: url(../imagens/foto\ 2\ love.jpg);
+}
+
+section.imagem>p {
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
